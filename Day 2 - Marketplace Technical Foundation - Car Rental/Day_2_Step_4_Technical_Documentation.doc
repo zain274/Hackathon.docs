@@ -1,0 +1,29 @@
+### Rental E-Commerce Marketplace - Technical Documentation
+
+#### **1. System Architecture Document**
+The system architecture for the rental e-commerce marketplace consists of three main components: the frontend, the backend, and third-party APIs. The frontend, built using Next.js, provides a responsive interface for users to browse cars, manage their accounts, and make bookings. Sanity CMS serves as the backend, managing all content and storing critical data such as vehicle listings, user details, and bookings. Third-party APIs handle additional functionalities, such as sending email confirmations, processing secure payments, and updating shipment or return tracking. The interaction between these components ensures a seamless user experience, from registration to order fulfillment.
+
+#### **2. API Specification Document**
+The system uses well-defined APIs to manage user interactions and data flow. Key endpoints include a registration endpoint for creating user accounts, a vehicle listing endpoint to fetch available cars, a booking endpoint to create and manage rental orders, a payment processing endpoint for secure transactions, and a tracking endpoint to provide real-time updates on shipment or returns. These APIs ensure efficient communication between the frontend, backend, and third-party services.
+
+#### **3. Workflow Diagram**
+The workflows include critical processes such as user registration, product browsing, order placement, and shipment/return tracking. Users can register on the platform, and their data is securely stored in the CMS. They can browse car categories and filter options, with data dynamically fetched from Sanity CMS. Once a user selects a car and rental duration, the booking details are stored in the backend, and a payment request is sent to the payment gateway. Real-time tracking for shipments or returns is handled via third-party APIs, ensuring transparency for the user.
+
+#### **4. Data Schema Design**
+The data schema is structured to support the functionalities of the platform. Key entities include:
+- **User**: Captures details like name, email, password, role, and registration date.
+- **Vehicle**: Stores information about car name, price, type, availability, and features.
+- **Booking**: Includes user ID, vehicle ID, rental duration, payment status, and booking status.
+- **Admin**: Manages fields such as full name, email, role, permissions, and last login date.
+These schemas are designed to establish clear relationships between users, bookings, and vehicles, enabling efficient data management and retrieval.
+
+#### **5. Technical Roadmap**
+The project follows a phased approach to ensure timely delivery:
+- **Phase 1**: Gather requirements, define architecture, and set up CMS schemas.
+- **Phase 2**: Develop the frontend interface and integrate it with the backend.
+- **Phase 3**: Implement third-party APIs for payments, email notifications, and tracking.
+- **Phase 4**: Conduct end-to-end testing to ensure seamless functionality.
+- **Phase 5**: Final deployment and documentation updates.
+
+Each phase is aligned with specific milestones, such as completing the frontend interface, integrating APIs, and performing comprehensive testing, ensuring a robust and user-friendly platform.
+
